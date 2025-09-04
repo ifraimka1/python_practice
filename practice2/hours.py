@@ -8,9 +8,8 @@ def print_time(m):
 
 
 while True:
-    m = int(input("Введите значение m: "))
-    print_time(m)
-
-    response = input("Введите y, если хотите ввести другие значения ")
-    if response != "y":
+    m = input("Введите значение m: ")
+    if m == "exit":
         break
+
+    print_time(int(m))
