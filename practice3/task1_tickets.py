@@ -14,16 +14,18 @@ def is_happy_number(number):
     if number_len % 2 != 0:
         return False
 
+    limit = number_len // 2
+
     for i in range(number_len):
         digit = number % 10
 
         if digit % 2 == 0:
             even_count += 1
-            if even_count > number_len // 2:
+            if even_count > limit:
                 return False
         else:
             odd_count += 1
-            if odd_count > number_len // 2:
+            if odd_count > limit:
                 return False
 
         number = number // 10
