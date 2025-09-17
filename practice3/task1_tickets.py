@@ -17,7 +17,7 @@ def is_happy_number(number):
 
     limit = number_len // 2
 
-    for i in range(int(number_len)):
+    for i in range(number_len):
         digit = number % 10
 
         if digit % 2 == 0:
