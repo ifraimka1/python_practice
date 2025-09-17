@@ -7,7 +7,6 @@ import math
 
 def is_happy_number(number):
     number_len = int(math.log10(number)) + 1
-    print(number_len)
     even_count = 0
     odd_count = 0
 
