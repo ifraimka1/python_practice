@@ -1,7 +1,3 @@
-def pack():
-    print('Упаковываем')
-
-
 class Pizza:
     template_name = "Пицца"
     template_dough = "Тесто"
@@ -31,6 +27,9 @@ class Pizza:
 
     def cut(self):
         print('Режем')
+
+    def pack(self):
+        print('Упаковываем')
 
 
 class PizzaPepperoni(Pizza):
