@@ -3,13 +3,13 @@ class Pizza:
     template_dough = "Тесто"
     template_topping = "Соус"
     template_filling = ['Сыр']
+    price = 299.9
 
     def __init__(self):
         self.name = f"{Pizza.template_name} стандартная"
         self.dough = f"{Pizza.template_dough} стандартное"
         self.topping = f"{Pizza.template_topping} томатный"
         self.filling = Pizza.template_filling
-        self.price = 299.9
 
     def __str__(self):
         output = f'{self.name}\n'
@@ -32,7 +32,7 @@ class Pizza:
         print('Упаковываем')
 
 
-class PizzaPepperoni(Pizza):
+class Pepperoni(Pizza):
     def __init__(self):
         super().__init__()
         self.name = f"{Pizza.template_name} Пепперони"
@@ -42,7 +42,7 @@ class PizzaPepperoni(Pizza):
         self.price = super().price + 49.9
 
 
-class PizzaBBQ(Pizza):
+class BBQ(Pizza):
     def __init__(self):
         super().__init__()
         self.name = f"{Pizza.template_name} Барбекю"
@@ -53,7 +53,7 @@ class PizzaBBQ(Pizza):
         self.price = super().price + 199.9
 
 
-class PizzaSeafood(Pizza):
+class Seafood(Pizza):
     def __init__(self):
         super().__init__()
         self.name = f"{Pizza.template_name} Дары моря"
